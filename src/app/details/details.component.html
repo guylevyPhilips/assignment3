@@ -1,0 +1,6 @@
+<button (click)="onButtonClick()">Display Destails</button>
+<p *ngIf="buttonClicked">Heppiness is like a warm gun</p>
+<p 
+*ngFor="let click of clicks" 
+[ngStyle]="{backgroundColor: getBackgroundColor()}"
+[ngClass]="{fifthElement: isFifthElement()}">{{click}}</p>
